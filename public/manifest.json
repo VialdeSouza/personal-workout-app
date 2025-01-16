@@ -1,6 +1,6 @@
 {
-    "short_name": "MyPWA",
-    "name": "My Progressive Web App",
+    "short_name": "My workout",
+    "name": "My personal workout",
     "icons": [
       {
         "src": "/icon-192.png",
