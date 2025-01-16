@@ -1,7 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Metadata } from "next";
-import RootLayoutClient from "./rootLayoutClient";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,9 +17,7 @@ export const metadata: Metadata = {
   description: "It's a simple progressive web application made with NextJS",
   generator: "Next.js",
   manifest: "/manifest.json",
-
 };
-
 
 export default function RootLayout({
   children,
@@ -32,9 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <RootLayoutClient>
         {children}
-        </RootLayoutClient>
       </body>
     </html>
   );
